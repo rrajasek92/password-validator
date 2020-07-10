@@ -1,5 +1,5 @@
 import React from 'react';
-import {PasswordPanel} from '../';
+import { PasswordPanel } from '../';
 
 function LandingPage(props) {
   return (

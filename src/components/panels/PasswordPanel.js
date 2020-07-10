@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {PasswordBar, CheckBox, ConditionList} from '../';
+import React, { useState } from 'react';
+import { PasswordBar, CheckBox, ConditionList } from '../';
 import './panels.css'
 
 function PasswordPanel(props) {

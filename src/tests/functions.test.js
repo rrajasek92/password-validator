@@ -1,6 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import {validatePassword} from '../functions'
+import { validatePassword } from '../functions'
 
 let conditions = ["8-72 Characters","1 Lower Case Character",
                     "Should Not Match Your Email Address", "1 Uppercase Character", "1 Number"];

@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {Condition} from '../';
-import {validatePassword} from '../../functions';
+import React, { useState, useEffect } from 'react';
+import { Condition } from '../';
+import { validatePassword } from '../../functions';
 import './statuses.css'
 function ConditionList(props) {
   const [validations, setValidations] = useState({"8-72 Characters": false,"1 Lower Case Character":false,

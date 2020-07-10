@@ -1,1 +1,1 @@
-export {default as PasswordPanel} from './PasswordPanel.js'
+export { default as PasswordPanel } from './PasswordPanel.js'

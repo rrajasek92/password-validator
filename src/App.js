@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
-import {LandingPage} from './components'
-import {getUser} from './api';
+import { LandingPage } from './components'
+import { getUser } from './api';
 import './App.css';
 
 function App() {
