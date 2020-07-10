@@ -1,5 +1,19 @@
 .panel {
+  width:100%;
   display:flex;
   flex-direction:column;
-  align-items:center;
+}
+
+.pLabel {
+  align-self:flex-start;
+}
+
+.password {
+  width:60%;
+  align-self:center;
+}
+
+.conditions {
+  width:60%;
+  align-self:center
 }

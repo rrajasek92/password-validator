@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 function Condition(props) {
   const strike = {
     textDecoration:props.strike?"line-through":"none"
   };
   return(
-      <p style={strike}>{props.text}</p>
+      <li><p style={strike}>{props.text}</p></li>
     )
 }
 

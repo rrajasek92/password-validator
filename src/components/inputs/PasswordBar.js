@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './inputs.css'
 
 function PasswordBar(props) {
   const [input, setInput] = useState(null);
@@ -12,8 +13,7 @@ function PasswordBar(props) {
   }
   return(
       <input type={props.show?'text':'password'}
-       name='password'
-       id='password'
+       className="pass-bar"
        value={input}
        onChange={(e) => handleChange(e.target.value)}
       />

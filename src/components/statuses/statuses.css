@@ -1,0 +1,6 @@
+.conditionList {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap column;
+  max-height: 10em;
+}

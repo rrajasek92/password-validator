@@ -14,11 +14,9 @@ function CheckBox(props) {
     <>
       <input
         type="checkbox"
-        id="show"
-        name="show"
         value={value}
         onChange={(e) => handleChange(e.target.checked)}/>
-      <label for="show">{props.label}</label>
+      <label>{props.label}</label>
     </>
     )
 }
