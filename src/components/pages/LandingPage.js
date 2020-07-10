@@ -1,0 +1,12 @@
+import React, {useState, useEffect} from 'react';
+import {PasswordPanel} from '../';
+
+function LandingPage(props) {
+  return (
+    <div>
+      <PasswordPanel />
+    </div>
+  );
+}
+
+export default LandingPage;
