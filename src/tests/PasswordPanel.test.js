@@ -20,7 +20,7 @@ describe('PasswordPanel tests', () => {
   })
   it('renders password label', () => {
     const wrapper = shallow(<PasswordPanel />);
-    const label = wrapper.find('span').text();
+    const label = wrapper.find('.pLabel').text();
     expect(label).toEqual("Password");;
   })
 })

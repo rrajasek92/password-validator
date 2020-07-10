@@ -12,7 +12,9 @@ function PasswordPanel(props) {
       <span className="pLabel">Password</span>
       <div className="password">
         <PasswordBar show={show} callback={setInput}/>
-        <CheckBox label="Show" callback={setShow} />
+        <span className="checkbox">
+          <CheckBox label="Show" callback={setShow} />
+        </span>
       </div>
       <div className="conditions">
       <ConditionList input={input} conditions={conditions}/>
