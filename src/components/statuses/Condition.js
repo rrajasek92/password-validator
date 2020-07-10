@@ -5,7 +5,7 @@ function Condition(props) {
     textDecoration:props.strike?"line-through":"none"
   };
   return(
-      <li><p style={strike}>{props.text}</p></li>
+      <li className="condition"><p style={strike}>{props.text}</p></li>
     )
 }
 

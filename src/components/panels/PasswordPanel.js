@@ -9,8 +9,8 @@ function PasswordPanel(props) {
                       "Should Not Match Your Email Address", "1 Uppercase Character", "1 Number"]
   return (
     <div className="panel">
+      <span className="pLabel">Password</span>
       <div className="password">
-        <p className="pLabel">Password</p>
         <PasswordBar show={show} callback={setInput}/>
         <CheckBox label="Show" callback={setShow} />
       </div>

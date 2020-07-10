@@ -1,11 +1,15 @@
 .panel {
+  padding:1rem;
   width:100%;
   display:flex;
   flex-direction:column;
 }
 
 .pLabel {
-  align-self:flex-start;
+  padding-bottom:0.2rem;
+  width:52%;
+  display:flex;
+  align-self:center
 }
 
 .password {
@@ -14,6 +18,6 @@
 }
 
 .conditions {
-  width:60%;
+  width:55%;
   align-self:center
 }

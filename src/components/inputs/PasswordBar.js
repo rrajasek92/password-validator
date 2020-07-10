@@ -12,10 +12,10 @@ function PasswordBar(props) {
     setInput(e);
   }
   return(
-      <input type={props.show?'text':'password'}
-       className="pass-bar"
-       value={input}
-       onChange={(e) => handleChange(e.target.value)}
+      <input id="password" type={props.show?'text':'password'}
+         className="pass-bar"
+         value={input}
+         onChange={(e) => handleChange(e.target.value)}
       />
     )
 }
