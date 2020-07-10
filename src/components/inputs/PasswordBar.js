@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import './inputs.css'
 
 function PasswordBar(props) {
   const [input, setInput] = useState(null);
@@ -11,11 +12,10 @@ function PasswordBar(props) {
     setInput(e);
   }
   return(
-      <input type={props.show?'text':'password'}
-       name='password'
-       id='password'
-       value={input}
-       onChange={(e) => handleChange(e.target.value)}
+      <input id="password" type={props.show?'text':'password'}
+         className="pass-bar"
+         value={input}
+         onChange={(e) => handleChange(e.target.value)}
       />
     )
 }

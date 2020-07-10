@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {PasswordBar, CheckBox, ConditionList} from '../';
-import {validatePassword} from '../../functions';
+import React, { useState } from 'react';
+import { PasswordBar, CheckBox, ConditionList } from '../';
 import './panels.css'
 
 function PasswordPanel(props) {
@@ -10,12 +9,14 @@ function PasswordPanel(props) {
                       "Should Not Match Your Email Address", "1 Uppercase Character", "1 Number"]
   return (
     <div className="panel">
-      <div>
-        <p>Password</p>
+      <span className="pLabel">Password</span>
+      <div className="password">
         <PasswordBar show={show} callback={setInput}/>
-        <CheckBox label="Show" callback={setShow} />
+        <span className="checkbox">
+          <CheckBox label="Show" callback={setShow} />
+        </span>
       </div>
-      <div style={{flexWrap: "wrap", width:"50%", height:"10rem"}}>
+      <div className="conditions">
       <ConditionList input={input} conditions={conditions}/>
       </div>
     </div>

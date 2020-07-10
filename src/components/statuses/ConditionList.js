@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {PasswordBar, CheckBox, Condition} from '../';
-import {validatePassword} from '../../functions';
-
+import React, { useState, useEffect } from 'react';
+import { Condition } from '../';
+import { validatePassword } from '../../functions';
+import './statuses.css'
 function ConditionList(props) {
   const [validations, setValidations] = useState({"8-72 Characters": false,"1 Lower Case Character":false,
                       "Should Not Match Your Email Address":true, "1 Uppercase Character":false, "1 Number":false});
@@ -13,12 +13,12 @@ function ConditionList(props) {
 
   const listConditions = () => {
     return conditions.map(function(x,i){
-      return <li key={i}><Condition text={x} strike={validations[x]} /></li>
+      return <Condition text={x} strike={validations[x]} />
     })
   }
 
   return (
-    <ul>
+    <ul className="conditionList">
       {listConditions()}
     </ul>
   );

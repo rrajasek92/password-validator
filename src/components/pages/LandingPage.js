@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {PasswordPanel} from '../';
+import React from 'react';
+import { PasswordPanel } from '../';
 
 function LandingPage(props) {
   return (
