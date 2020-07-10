@@ -5,7 +5,7 @@ import { getUser } from './api';
 import './App.css';
 
 function App() {
-
+  sessionStorage.setItem("user", "placeholder")
   useEffect(() => {
     axios.get(getUser)
     .then(res => {
@@ -22,15 +22,6 @@ function App() {
       alert("Error retrieving user information")
     })
   },[])
-
-  // useEffect(() => {
-  //   fetch("https://reqres.in/api/users?page=2")
-  //     .then(response => response.json())
-  //     .then(data => console.log(data))
-  // },[])
-
-
-
 
   return (
     <div className="App">
