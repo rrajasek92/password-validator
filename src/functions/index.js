@@ -22,7 +22,7 @@ function valSwitch(condition, map, password) {
       }
       break;
     case "Should Not Match Your Email Address":
-      if(password!==sessionStorage.getItem("email")) map[condition] = true;
+      if(!password.toLowerCase().includes(sessionStorage.getItem("user").toLowerCase())) map[condition] = true;
       break;
     case "1 Uppercase Character":
       for(let i in password){
